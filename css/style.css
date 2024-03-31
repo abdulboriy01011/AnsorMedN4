@@ -70,13 +70,13 @@ body {
   padding-bottom: 24px;
 }
 
-.site-header-container {
+.site-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.site-logo-link {
+.site-logo-link__img {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -84,28 +84,28 @@ body {
   transition: all 0.4s ease;
 }
 
-.site-logo {
+.site-logo-link__title {
   width: 50px;
   height: 50px;
   margin-right: 16px;
 }
 
-.site-logo:hover {
+.site-logo-link__title:hover {
   font-weight: 600;
   font-size: 24px;
   color: #222222;
   line-height: 1.4;
 }
 
-.site-logo-link:hover {
+.site-logo__link:hover {
   color: #de2e54;
 }
 
-.site-logo-link:active {
+.site-logo__link:active {
   opacity: 0.6;
 }
 
-.site-list {
+.site-nav__list {
   display: flex;
   align-items: center;
   padding: 0;
@@ -113,11 +113,11 @@ body {
   list-style: none;
 }
 
-.site-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 32px;
 }
 
-.site-item-link {
+.site-nav__link {
   text-decoration: none;
   font-weight: 700;
   font-size: 14px;
@@ -126,11 +126,11 @@ body {
   line-height: 1.5;
 }
 
-.site-item-link:hover {
+.site-nav__link:hover {
   color: #de2e54;
 }
 
-.site-item-link:active {
+.site-nav__link:active {
   opacity: 0.6;
 }
 
@@ -147,6 +147,10 @@ body {
   letter-spacing: 2px;
   line-height: 1.5;
   transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 450px;
 }
 
 .btn:hover {
@@ -154,64 +158,64 @@ body {
   color: #de2e54;
   border: 2px solid #de2e54;
 }
-/* Site Header End */
+/* Site__Header End */
 
-/* Site hero start */
-.site-hero {
+/* Site__hero start */
+.site__hero {
   background-color: #0EB4C1;
   padding-top: 24px;
   color: #fff;
 }
 
-.site-hero-container {
+.site__hero-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.site-hero-info {
+.site__hero-info {
   max-width: 500px;
   width: 100%;
 }
 
-.site-hero-info-title {
+.site__hero-info-title {
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
 }
 
-.site-hero-info-text {
+.site__hero-info-text {
   margin-bottom: 36px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
 }
 
-.site-hero-btn {
+.site__hero-btn {
   transition: all 0.4s ease;
 }
 
-.site-hero-btn:hover {
+.site__hero-btn:hover {
   opacity: 0.8;
   background-color: #de2e54;
   color: #fff;
 }
 
-.site-hero-btn:focus {
+.site__hero-btn:focus {
   outline: 2px dotted #de2e54;
   outline-offset: 3px;
 }
 
-.site-hero-img-wrapper {
+.site__hero-img-wrapper {
   display: flex;
 }
 
-.site-hero-img-wrapper img {
+.site__hero-img-wrapper img {
   width: 423px;
   height: 504px;
 }
-/* Site hero end */
+/* Site__hero end */
 
 /* Services start */
 .services {
@@ -219,7 +223,7 @@ body {
   padding-bottom: 120px;
 }
 
-.secvices-title {
+.secvices__title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -228,37 +232,37 @@ body {
   margin-bottom: 56px;
 }
 
-.secvices-list {
+.secvices__list {
   padding: 0;
   margin: 0;
   list-style: none;
   margin-bottom: 60px;
 }
 
-.secvices-item {
+.secvices__item {
   display: flex;
   align-items: center;
 }
 
-.secvices-item:not(:last-child) {
+.secvices__item:not(:last-child) {
   margin-bottom: 80px;
 }
 
-.secvices-img {
+.secvices__img {
   margin-right: 64px;
 }
 
-.secvices-img img {
+.secvices__img img {
   width: 200;
   height: 200;
 }
 
-.secvices-info {
+.secvices__info {
   max-width: 600px;
   width: 100%;
 }
 
-.secvices-info-title {
+.secvices__info-title {
   margin-bottom: 24px;
   font-weight: 700;
   font-size: 24px;
@@ -299,6 +303,7 @@ body {
 .btn-pasi:hover {
   background-color: #de2e54;
   border: solid 2px #de2e54;
+  transition: all 0.6s ease;
 }
 
 .btn-pasi:active {
@@ -319,25 +324,31 @@ body {
   width: 194px;
   height: 42px;
 }
+
+.btn-pasi2:hover {
+  background-color: #de2e54;
+  border: solid 2px #de2e54;
+  transition: all 0.6s ease;
+}
 /* Qabulga ro'yxatga o'ting end */
 
 /* Eng pasi start */
-.site-header1 {
+.site__header1 {
   background-color: #222222;
   width: 1,440px;
   height: 97,94px;
   padding: 24px;
 }
 
-.site-item-link1 {
+.site__item-link1 {
   color: #de2e54;
 }
 
-.site-logo-title1 {
+.site__logo-title1 {
   color: #fff;
 }
 
-.site-item-link1 {
+.site__item-link1 {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
@@ -346,7 +357,7 @@ body {
   line-height: 1.5;
 }
 
-.site-item-link1 {
+.site__item-link1 {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
@@ -355,11 +366,11 @@ body {
   line-height: 1.5;
 }
 
-.site-item-link1:hover {
+.site__item-link1:hover {
   color: #de2e54;
 }
 
-.site-item-link2 {
+.site__item-link2 {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
@@ -368,7 +379,7 @@ body {
   line-height: 1.5;
 }
 
-.site-item-link3 {
+.site__item-link3 {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
@@ -377,16 +388,16 @@ body {
   line-height: 1.5;
 }
 
-.site-item-link4 {
+.site__item-link4 {
   text-decoration: none;
-  color: #fff;
+  color: #fff;btn
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 2px;
   line-height: 1.5;
 }
 
-.site-item-link5 {
+.site__item-link5 {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
